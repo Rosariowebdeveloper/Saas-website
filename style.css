@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=EB+Garamond:ital,wght@1,600&family=Figtree:wght@600;800&family=Hedvig+Letters+Serif:opsz@12..24&family=Merriweather:wght@900&family=Montserrat:wght@300;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=EB+Garamond:ital,wght@1,600&family=Figtree:wght@600;800&family=Hedvig+Letters+Serif:opsz@12..24&family=Merriweather:wght@900&family=Montserrat:wght@300;500;700&family=Poppins:ital,wght@1,500&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Figtree', sans-serif;
+font-family: 'Hedvig Letters Serif', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.navi{
+    background-color: #F8F8F8;
+    position: fixed ;
+    
+}
+
+.container-fluid .heading{
+    
+ 
+    font-weight: 600;
+
+
+}
+
+.all{
+    color: #FF5841;
+}
+
+.btn-m .btn1{
+   width: 130px;
+   height: 50px;
+   background-color: #FFFFFF;
+
+}
+.btn-m .btn1:hover{
+    background-color:#FF5841  ;
+}
+
+.btn-m .btn2:hover{
+    background-color:#FF5841 ;
+}
+
+.btn-m .btn2{
+    width: 160px;
+   height: 50px;
+   color: white;
+   background-color: black;
+}
+
+.star{
+    color: yellow;
+}
