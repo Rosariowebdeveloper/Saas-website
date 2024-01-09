@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=EB+Garamond:ital,wght@1,600&family=Figtree:wght@600;800&family=Hedvig+Letters+Serif:opsz@12..24&family=Merriweather:wght@900&family=Montserrat:wght@300;500;700&family=Poppins:ital,wght@1,500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=EB+Garamond:ital,wght@1,600&family=Figtree:wght@600;800&family=Hedvig+Letters+Serif:opsz@12..24&family=Merriweather:wght@900&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0% ;
+    padding: 0% ;
+
     box-sizing: border-box;
     font-family: 'Caveat', cursive;
     font-family: 'EB Garamond', serif;
@@ -14,15 +19,106 @@
     font-family: 'Merriweather', serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
+ 
+  
 }
 
+::selection{
+    background-color:  #89DC12;
+}
+/* navbar*/
 .navi {
     background-color: #F8F8F8;
     position: fixed;
-    z-index: 1000;
+    z-index: 10000;
 
 
 }
+
+/* navbar*/
+
+
+
+/* home*/
+
+
+.left {
+
+ 
+    background-image: url(/output-onlinepngtools.png);
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .input:focus {
+    border-color: rgb(30, 164, 51);
+    box-shadow: 0px 0px;
+  
+  }
+  
+  #emailError,
+  #passwordError,
+  #newError {
+    padding: 1px;
+    font-size: 10px;
+    color: red;
+    margin-left: 20px;
+  }
+  
+  #email1Error,
+  #password1Error {
+    padding: 1px;
+    font-size: 10px;
+    color: red;
+    margin-left: 20px;
+  }
+  
+  
+  #bto {
+  
+    width: 300px;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: black;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2DC034;
+  }
+  
+  #bto:hover {
+    color: white;
+    transform: scale(1.1);
+    outline: 2px solid #8cd48f;
+    box-shadow: 4px 5px 17px -4px #2DC034;
+  }
+  
+  #bto::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2DC034;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  #bto:hover::before {
+    width: 250%;
+  }
+
+
+
 
 .container-fluid .heading {
 
@@ -33,31 +129,93 @@
 }
 
 .all {
-    color: #FF5841;
+    color: #89DC12;
+
 }
+
+
+
+.imo{
+  position: relative;
+}
+
+.imo::after{
+    position: absolute;
+animation: ending .5s infinite;
+
+}
+
+@keyframes ending{
+    100%{
+        margin-top: 2px;
+        transition: 1s ease-in;
+        
+    }
+}
+
+
+
 
 .btn-m .btn1 {
-    width: 130px;
+    width: 40%;
     height: 50px;
-    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #ffff;
+
 
 }
+
+
 
 .btn-m .btn1:hover {
-    background-color: #FF5841;
+    color:#02BB39 ;
+    animation: rot .2s ease-out;
+    background-color: #ffff;
+}
+.btn-m .btn1:hover:active{
+    color: #FFFFFF;
+}
+.btn-m .btn2:hover {
+    color: #ffff;
+    background: rgb(9,188,56);
+    background: linear-gradient(333deg, rgba(9,188,56,1) 0%, rgba(89,197,45,1) 100%);
+    transition: .1s;
+  animation: rot .2s ease-out;
+}
+.btn-m .btn2:hover:active{
+    color: #FFFFFF;
 }
 
-.btn-m .btn2:hover {
-    background-color: #FF5841;
+@keyframes rot{
+
+100%{
+    rotate: 10deg;
 }
+
+
+50%{
+    rotate: -15deg;
+}
+
+0%{
+    rotate: 10deg;
+}
+}
+
+
+
+
+
 
 .guru .btnp {
     font-size: 14px;
     color: white;
     width: 110px;
     height: 50px;
-    background-color: #FF5841;
-
+    background: rgb(103,198,43);
+    background: linear-gradient(333deg, rgba(103,198,43,1) 0%, rgba(9,188,56,1) 100%);
 }
 
 .guru .btnp:hover {
@@ -70,7 +228,8 @@
     width: 160px;
     height: 50px;
     color: white;
-    background-color: black;
+    background: rgb(103,198,43);
+    background: linear-gradient(333deg, rgba(103,198,43,1) 0%, rgba(9,188,56,1) 100%);
 }
 
 .star {
@@ -78,74 +237,186 @@
 }
 
 .collapse .navbar-nav .nav-item .meen:hover {
-    color: #FF5841;
+    color: #02BB39;
+    border-bottom: 3px solid rgb(9,188,56);;
 }
 
-#folder {
-    min-height: 100vh;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#folder .folder1 {
-
-
-    width: 100%;
-    height: 600px;
-    padding: 5px;
-
-
+.imo{
+       
+    animation-name : uptodown1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .1;
 
 }
-
-.folder_tab,
-.folder {
-    margin: 0 auto;
-    background-color: #1D1E25;
+.imo2 .rotti{
+   
+    animation-name : uptodown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .1;
 
 }
 
-.folder_tab {
+@keyframes uptodown{
+    0%{
+        transform:translateY(0px)
+    }
+    50%{
+        transform:translateY(20px)
 
-    width: 40%;
-    height: 12%;
-    margin-right: 50%;
-    border-radius: 35px 0px 0px 0px;
+    }
+    100%{
+        transform:translateY(0px)
 
-}
-
-.folder {
-    width: 80%;
-    height: 85%;
-    border-radius: 0 0px 35px 35px;
-
+    }
 
 }
+
+
+
+@keyframes uptodown1{
+    0%{
+        transform:translateX(0px)
+    }
+    50%{
+        transform:translateY(-20px)
+
+    }
+    100%{
+        transform:translateY(0px)
+
+    }
+
+}   
+
+
+.allon{
+
+ min-height: fit-content;
+ overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .custom .btno {
     width: 180px;
     height: 50px;
-    background-color: #FF5841;
     color: white;
-    font-size: 13px;
+    background: rgb(103,198,43);
+    background: linear-gradient(333deg, rgba(103,198,43,1) 0%, rgba(9,188,56,1) 100%);
+    font-size: 15px;
 
 }
 
 .custom .btno:hover {
-    background-color: black;
-    color: white;
-    transition: .8s;
-
+    color: #ffff;
+    background: rgb(9,188,56);
+    background: linear-gradient(333deg, rgba(9,188,56,1) 0%, rgba(89,197,45,1) 100%);
+    transition: .1s;
+  animation: rot .2s ease-out;
 
 }
-
+.custom .btno:hover:active{
+    color: #FFFFFF;
+}
 #dashboard {
     min-height: 100vh;
 }
 
 #testimonal {
     min-height: 100vh;
+}
+
+.card{
+height: 300px !important;
+background-color: transparent !important;
+letter-spacing: 1px;
+}
+.active1{
+    background-color: #FFFFFF  !important;
+
+}
+.card:hover{
+background-color: #FFFFFF  !important;
+
+   cursor: pointer;
+transition: .5s ease;
+animation: car 2s ease;
+
+}
+
+@keyframes car{
+    0%{
+transform: translateY(0px);    }
+50%{
+    transform: translateY(10px);    }
+    100%{
+        transform: translateY(0px);    }
+}
+
+
+.roo .rotti1{
+    animation-name : lefttoright1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .1;
+
+}
+
+@keyframes lefttoright1{
+    0%{
+        transform:translateX(0px)
+    }
+    50%{
+        transform:translateX(-10px)
+
+    }
+    100%{
+        transform:translatex(0px)
+
+    }
+
+}
+
+.bol{
+    animation-name : lefttoright12;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .1;
+
+}
+
+@keyframes lefttoright12{
+    0%{
+        transform:translateY(40px)
+    }
+    50%{
+        transform:translateY(-40px)
+
+    }
+    100%{
+        transform:translateY(40px)
+
+    }
 }
 
